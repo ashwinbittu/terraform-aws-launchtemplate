@@ -1,7 +1,7 @@
-variable "name" {
+variable "lt_name" {  
 }
 
-variable "description" {
+variable "lt_description" {
 }
 
 variable "ami_id" { 
@@ -10,15 +10,11 @@ variable "ami_id" {
 variable "instance_type" {
 }
 
-variable "securitygroup_id" {
-}
-
-variable "key_name" {
-}
-
 variable "instdevice_name" {
 }
 
 variable "user_datascript" {
 }
 
+variable "securitygroup_id" {
+}
