@@ -28,7 +28,9 @@ resource "aws_launch_template" "lctemplate" {
   }   
   tag_specifications {
     resource_type = "instance"
-
-  }  
+    tags = {
+      Name = var.lt_name
+    }
+  } 
   
 }
