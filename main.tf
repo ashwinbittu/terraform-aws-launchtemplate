@@ -3,8 +3,8 @@
 #}
 
 resource "aws_launch_template" "lctemplate" {
-  name = var.name
-  description = var.description
+  name = var.lt_name
+  description = var.lt_description
   image_id = var.ami_id
   instance_type = var.instance_type
 
