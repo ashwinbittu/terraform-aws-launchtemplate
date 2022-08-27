@@ -4,6 +4,11 @@ output "launch_template_id" {
   value = aws_launch_template.lctemplate.id 
 }
 
+output "launch_template_name" {
+  description = "Launch Template name"
+  value = aws_launch_template.lctemplate.name 
+}
+
 output "launch_template_latest_version" {
   description = "Launch Template Latest Version"
   value = aws_launch_template.lctemplate.latest_version 
