@@ -11,7 +11,6 @@ resource "aws_launch_template" "lctemplate" {
   vpc_security_group_ids = [ var.securitygroup_id ]
   key_name = var.key_name
   #user_data = filebase64("${path.root}/iac/packer/userdata/${var.user_datascript}")
-  ebs_optimized = true 
   #default_version = 1
   update_default_version = true 
   block_device_mappings {
