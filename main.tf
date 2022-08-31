@@ -29,6 +29,10 @@ resource "aws_launch_template" "lctemplate" {
     resource_type = "instance"
     tags = {
       Name = var.lt_name
+      app_id   = var.app_id 
+      app_name   = var.app_name 
+      app_env   = var.app_env 
+      layer = var.layer      
     }
   } 
   
